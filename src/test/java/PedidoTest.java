@@ -11,11 +11,4 @@ public class PedidoTest {
         assertEquals("Pedido Médio", pedido.getAvaliacaoPedido());
     }
 
-    @Test
-    void deveRetornarValorTotalPedido() {
-        Pedido pedido = new Pedido();
-        pedido.setAvaliacaoPedido("Pedido Médio");
-
-        assertEquals(60.0f, pedido.getValorTotalPedido());
-    }
 }

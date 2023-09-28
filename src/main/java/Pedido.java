@@ -16,7 +16,5 @@ public class Pedido {
         return persistencia.recuperarAvaliacaoPedido();
     }
 
-    public double getValorTotalPedido() {
-        return persistencia.getValorPedido();
-    }
+
 }

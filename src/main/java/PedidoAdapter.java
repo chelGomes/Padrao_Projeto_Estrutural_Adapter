@@ -6,9 +6,9 @@ public class PedidoAdapter extends AvaliacaoPedido {
     }
 
     public String recuperarAvaliacaoPedido() {
-        if (itemPedido.setAvaliacaoPedido() >= 60.0f)
+        if (Float.parseFloat(itemPedido.getAvaliacaoPedido()) >= 60.0f)
             itemPedido.setAvaliacaoPedido("Pedido Grande");
-        else if (itemPedido.setAvaliacaoPedido() >= 30.0f)
+        else if (Float.parseFloat(itemPedido.getAvaliacaoPedido()) >= 30.0f)
             itemPedido.setAvaliacaoPedido("Pedido Médio");
         else
             itemPedido.setAvaliacaoPedido("Pedido Pequeno");
